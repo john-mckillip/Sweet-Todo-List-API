@@ -37,7 +37,10 @@ namespace TodoListAPI
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(
+            IApplicationBuilder app, 
+            IWebHostEnvironment env,
+            TodoInfoContext dataContext)
         {
             if (env.IsDevelopment())
             {
@@ -54,6 +57,9 @@ namespace TodoListAPI
             {
                 endpoints.MapControllers();
             });
+
+            // Ensure the db is created and all migrations are rtun
+            dataContext.Database.Migrate();
         }
     }
 }
