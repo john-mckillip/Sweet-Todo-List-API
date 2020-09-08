@@ -8,7 +8,7 @@ Update the connection string in launchSetting.json to your sql server instance. 
 
 ### Note on Patch Document for PartiallyUpdateTodo Endpoint
 
-Documentation for using JsonPatch in ASP.NET Core 3.1 can be founf here: https://docs.microsoft.com/en-us/aspnet/core/web-api/jsonpatch?view=aspnetcore-3.1
+Documentation for using JsonPatch in ASP.NET Core 3.1 can be found here: https://docs.microsoft.com/en-us/aspnet/core/web-api/jsonpatch?view=aspnetcore-3.1
 
 Example Body of a request:
 
