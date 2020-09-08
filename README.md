@@ -1,6 +1,6 @@
 ﻿# Sweet Todo List API
 
-A Fun Code Challenge for a cool company
+A Fun Code exercise for a cool company
 
 ## Getting started
 
