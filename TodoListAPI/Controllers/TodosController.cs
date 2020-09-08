@@ -72,7 +72,6 @@ namespace TodoListAPI.Controllers
             }
 
             var todoEntity = _mapper.Map<Todo>(todo);
-            todoEntity.Id = Guid.NewGuid();
             todoEntity.LastModified = DateTime.Now;
 
             var success = await _todoListInfoRepository.CreateTodo(todoEntity);
